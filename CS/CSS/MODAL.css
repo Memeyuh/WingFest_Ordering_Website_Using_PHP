@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap");
+/***** MODAL *****/
+.modal-body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+}
+
+.modal-footer{
+  padding: 0 1.4rem 0 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close{
+  font-size: 1.8rem;
+}
+
+.form-group{
+  width: calc(100% / 2 - 20px);
+}
+
+.form-group label,
+.gender-details .gender-title{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: .9rem;
+}
+
+.form-group select{
+  font-size: 1rem;
+}
+
+.modal-body .form-group input,
+.modal-body .form-group textarea,
+.form-group select{
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-group input:focus,
+.form-group input:valid
+{
+  border-color: #fbd393;
+}
+
+.gender-details .category{
+  display: flex;
+  width: 400px;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+.gender-details .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.gender-details .category label .dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three,
+#dot-4:checked~.category label .four,
+#dot-5:checked~.category label .five,
+#dot-6:checked~.category label .six {
+  background: #ff9e2d;
+  border: 1px solid #928c85;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+.modal .modal-dialog {
+  display: flex;
+  column-gap: 2rem;
+  height: 700px;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal{
+  padding: 10px 20px;
+}
+
+.modal .modal-content {
+  border-radius: 3px;
+  overflow-y: scroll;
+}
+
+
+.modal-header h5{
+  display: inline-block;
+  font-family: 'Oswald';
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ff9e2d;
+}
+
+.modal textarea.form-control {
+  resize: vertical;
+}
+
+.modal .btn {
+  border-radius: 10px;
+  min-width: 190px;
+  font-size: 1rem;
+  font-weight: 400;
+}
